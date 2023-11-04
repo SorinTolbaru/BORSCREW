@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>BORSCREW - Repere</title>
+  </head>
+
+  <body>
+    <div class="logo">
+      <span class="logo-text">BORSCREW</span>
+    </div>
+
+    <div class="retragere-reper">
+      <div class="inchide">
+        <svg
+          fill="#000000"
+          height="0.8rem"
+          width="0.8rem"
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 460.775 460.775"
+          xml:space="preserve">
+          <path
+            d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+       c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+       c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+       c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+       l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+       c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z" />
+        </svg>
+      </div>
+      <p>Cate repere doriti sa retrageti?</p>
+      <input
+        type="number"
+        min="0"
+        class="cantitateRetragere"
+        oninput="validity.valid||(value='');"
+        placeholder="Numar repere" />
+      <button class="retrage">Retrag</button>
+    </div>
+
+    <div class="stergere-reper">
+      <div class="inchide-sterge">
+        <svg
+          fill="#000000"
+          height="0.8rem"
+          width="0.8rem"
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 460.775 460.775"
+          xml:space="preserve">
+          <path
+            d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+       c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+       c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+       c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+       l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+       c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z" />
+        </svg>
+      </div>
+      <p>Doriti sa stergeti acest reper?</p>
+      <div class="raspuns">
+        <button class="sterge">Da</button>
+        <button class="anulare">Nu</button>
+      </div>
+    </div>
+
+    <div class="zoom-reper-container ascunde-meniu">
+      <div class="zoom-reper">
+        <div class="inchide-zoom">
+          <svg
+            fill="white"
+            height="1rem"
+            width="1rem"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 460.775 460.775"
+            xml:space="preserve">
+            <path
+              d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+           c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+           c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+           c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+           l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+           c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="meniu-principal ascunde-meniu">
+      <div class="container-sortare-search">
+        <div class="meniu-sortare">
+          <div class="meniu-sortare-linie">
+            <label for="tipreper" class="make-bold">Tip reper:</label>
+            <select name="tipreper" id="tipreper">
+              <option value="">Selecteaza tipul</option>
+              <option value="standard">Standard</option>
+              <option value="senzori">Senzori</option>
+            </select>
+          </div>
+
+          <div class="meniu-sortare-hala">
+            <label for="halaSearch" class="make-bold">Hala:</label>
+            <select name="hala" id="halaSearch">
+              <option value="">Selecteaza hala</option>
+              <option value="Electrotehnica 1">Electrotehnica 1</option>
+              <option value="Electrotehnica 2">Electrotehnica 2</option>
+            </select>
+          </div>
+
+          <div class="meniu-sortare-producator">
+            <label for="producatorSearch" class="make-bold">Producator:</label>
+            <select name="producator" id="producatorSearch">
+              <option value="">Selecteaza producator</option>
+              <option value="Harting">Harting</option>
+              <option value="NOVOTEC">NOVOTEC</option>
+              <option value="Malente">Malente</option>
+              <option value="FM Richter">FM Richter</option>
+              <option value="Floerke">Floerke</option>
+            </select>
+          </div>
+
+          <div class="meniu-sortare-Linie Productie">
+            <label for="Linie ProductieSearch" class="make-bold"
+              >Linie Productie:</label
+            >
+            <select name="Linie Productie" id="categorieSearch">
+              <option value="">Selecteaza linia</option>
+              <option value="DTX HAP 4">DTX HAP 1</option>
+              <option value="DTX HAP 6">DTX HAP 2</option>
+              <option value="DTX HAP 3">DTX HAP 3</option>
+              <option value="DTX HAP 1">DTX HAP 4</option>
+              <option value="DTX HAP 5">DTX HAP 5</option>
+              <option value="DTX HAP 2">DTX HAP 6</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="search-form" action="#" method="post">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            autocomplete="off"
+            placeholder="Nume reper, Cod IFS, Producator..." />
+          <input type="button" id="search-button" value="Cauta" />
+        </div>
+      </div>
+
+      <div class="meniu-secundar">
+        <div class="piese-cautate"></div>
+        <form class="formPost ascunde-meniu" action="#" method="post">
+          <div class="nou-container">
+            <strong>Poza reper:</strong
+            ><input type="file" name="pozaReper" id="poza_piesa" />
+          </div>
+
+          <div class="nou-container">
+            <strong>Nume reper:</strong>
+            <input type="text" name="numeReper" id="nume_reper" />
+          </div>
+
+          <div class="nou-container">
+            <strong>Tip reper:</strong>
+            <select name="tipReper" id="tip_reper">
+              <option value="">Selecteaza tipul</option>
+              <option value="standard">Standard</option>
+              <option value="senzori">Senzori</option>
+            </select>
+          </div>
+
+          <div class="nou-container">
+            <strong>Cod IFS:</strong>
+            <input type="text" name="codIfs" id="cod_ifs" />
+          </div>
+
+          <div class="nou-container">
+            <strong>Producator:</strong>
+            <select name="producator" id="producator">
+              <option value="">Selecteaza producator</option>
+              <option value="Harting">Harting</option>
+              <option value="NOVOTEC">NOVOTEC</option>
+              <option value="Malente">Malente</option>
+              <option value="FM Richter">FM Richter</option>
+              <option value="Floerke">Floerke</option>
+            </select>
+          </div>
+
+          <div class="nou-container">
+            <strong>Cod Producator:</strong>
+            <input type="text" name="codProducator" id="cod_producator" />
+          </div>
+
+          <div class="nou-container">
+            <strong>Linie Productie:</strong>
+            <select name="Linie Productie" id="linie_productie">
+              <option value="">Selecteaza linia</option>
+              <option value="DTX HAP 4">DTX HAP 1</option>
+              <option value="DTX HAP 6">DTX HAP 2</option>
+              <option value="DTX HAP 3">DTX HAP 3</option>
+              <option value="DTX HAP 1">DTX HAP 4</option>
+              <option value="DTX HAP 5">DTX HAP 5</option>
+              <option value="DTX HAP 2">DTX HAP 6</option>
+            </select>
+          </div>
+
+          <div class="nou-container">
+            <strong>Serie Echipament:</strong>
+            <input type="text" name="serieEchipament" id="serie_echipament" />
+          </div>
+
+          <div class="nou-container">
+            <strong>Locatie magazie:</strong>
+            <input type="text" name="locatieMagazie" id="locatie_magazie" />
+          </div>
+
+          <div class="nou-container">
+            <strong>Hala:</strong>
+            <select name="hala" id="hala">
+              <option value="">Selecteaza hala</option>
+              <option value="Electrotehnica 1">Electrotehnica 1</option>
+              <option value="Electrotehnica 2">Electrotehnica 2</option>
+            </select>
+          </div>
+          <div class="nou-container">
+            <strong>Cantitate stoc minim admis:</strong
+            ><input type="number" id="cantitate_stoc_minim" />
+          </div>
+          <div class="nou-container">
+            <strong>Cantitate stoc actual:</strong
+            ><input type="number" id="cantitate_stoc_actual" />
+          </div>
+          <div class="nou-container">
+            <strong>Unitate de masura:</strong
+            ><input type="text" id="unitate_masura" />
+          </div>
+          <div class="nou-container">
+            <strong>Pre unitar (Lei):</strong
+            ><input type="number" id="pret_unitar_lei" />
+          </div>
+          <div class="nou-container">
+            <strong>Descriere:</strong><textarea id="descriere"></textarea>
+          </div>
+
+          <div class="nou-container">
+            <strong>Observatii:</strong><textarea id="observatii"></textarea>
+          </div>
+
+          <input type="submit" value="Adauga reper" class="submitPost" />
+        </form>
+      </div>
+      <div class="add-button-container">
+        <input
+          style="height: 5vh"
+          type="button"
+          value="Salveaza modificari"
+          id="salvare" />
+        <div class="nr_piese"><strong>Rezultate</strong>:</div>
+        <div class="reper-delogare">
+          <input
+            style="height: 5vh"
+            type="button"
+            value="Reper nou"
+            id="add-button" />
+          <input
+            style="height: 5vh"
+            type="button"
+            value="Delogare"
+            id="delogare" />
+        </div>
+      </div>
+    </div>
+
+    <div class="meniu-logare">
+      <div class="loading-logare">Se incarca...</div>
+      <button class="buton-admin ascunde-meniu">Admin</button>
+      <button class="buton-logare ascunde-meniu">Guest</button>
+      <div class="password-container ascunde-meniu">
+        <div class="inchide-logare">
+          <svg
+            fill="#000000"
+            height="0.8rem"
+            width="0.8rem"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 460.775 460.775"
+            xml:space="preserve">
+            <path
+              d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+           c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+           c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+           c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+           l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+           c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z" />
+          </svg>
+        </div>
+        <p>Introdu Parola</p>
+        <input type="password" class="password" />
+        <button id="logare">Logare</button>
+      </div>
+    </div>
+    <script src="./jquery-3.7.0.js" defer></script>
+    <script type="module" src="./ui-elements.js"></script>
+    <script type="module" src="./script.js" defer></script>
+  </body>
+</html>
