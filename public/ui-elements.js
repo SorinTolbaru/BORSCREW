@@ -8,7 +8,7 @@ export function creazaPiesa(
 ) {
   return `
      <div class="piesa" id='${data[index].id}'>
-     <img class="poza-piesa" src='${data[index].poza_piesa}' loading="lazy"">
+     <img class="poza-piesa" src='${data[index].poza_piesa}' loading="lazy">
      <div class="date-piesa-container">
          <div class="date-importante">
              <div class="celula-piesa" ${display}><div><strong>Poza reper</strong>:<span ${modEditor} class="data"> ${data[

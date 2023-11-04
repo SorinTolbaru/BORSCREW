@@ -2,6 +2,18 @@ const express = require("express")
 const cors = require("cors")
 const path = require("path")
 const fs = require("fs")
+const multer = require("multer")
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, path.join(__dirname, "public/piese/"))
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname)
+  },
+})
+
+const upload = multer({ storage: storage })
 
 const app = express()
 app.use(cors())
@@ -25,7 +37,7 @@ app.get("/verifyAdmin", (req, res) => {
   res.send(isAdmin)
 })
 
-app.post("/addDB", (req, resp) => {
+app.post("/addDB", upload.single("file"), (req, resp) => {
   let data = JSON.parse(
     fs.readFileSync(path.join(__dirname, "/database/data.json"), "utf8")
   )
@@ -34,7 +46,7 @@ app.post("/addDB", (req, resp) => {
     id = Math.round(Math.random(1, 9999) * 100)
   }
   req.body.id = id
-  data.repere.push(req.body)
+  data.repere.push(JSON.parse(req.body.json))
   fs.writeFileSync(
     path.join(__dirname, "/database/data.json"),
     JSON.stringify(data, null, 2)

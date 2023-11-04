@@ -221,11 +221,17 @@ $(document).ready(function () {
         e.preventDefault()
         $(".piese-cautate").toggleClass("ascunde-meniu")
         $(".formPost").toggleClass("ascunde-meniu")
+
+        var formData = new FormData()
+        formData.append("json", JSON.stringify(reperNou))
+        formData.append("file", $("#poza_piesa")[0].files[0])
+
         $.ajax({
           type: "POST",
           url: "/addDB",
-          contentType: "application/json",
-          data: JSON.stringify(reperNou),
+          processData: false,
+          contentType: false,
+          data: formData,
           success: function (resp) {
             console.log(resp)
             continuestart()
