@@ -40,7 +40,8 @@
       "cantitate_stoc_actual": "13",
       "cantitate_stoc_minim": "30",
       "unitate_masura": "buc",
-      "pret_unitar_lei": "75"
+      "pret_unitar_lei": "75",
+      "id": 3
     },
     {
       "poza_piesa": "./piese/rulment54421.jpg",
@@ -77,7 +78,8 @@
       "cantitate_stoc_actual": "7",
       "cantitate_stoc_minim": "5",
       "unitate_masura": "buc",
-      "pret_unitar_lei": "85"
+      "pret_unitar_lei": "85",
+      "id": 5
     },
     {
       "poza_piesa": "./piese/dorncentrare.jpg",
@@ -133,7 +135,8 @@
       "cantitate_stoc_actual": "10",
       "cantitate_stoc_minim": "8",
       "unitate_masura": "buc",
-      "pret_unitar_lei": "65"
+      "pret_unitar_lei": "65",
+      "id": 8
     },
     {
       "poza_piesa": "./piese/extractor2629.jpg",
@@ -151,7 +154,8 @@
       "cantitate_stoc_actual": "17",
       "cantitate_stoc_minim": "14",
       "unitate_masura": "buc",
-      "pret_unitar_lei": "80"
+      "pret_unitar_lei": "80",
+      "id": 9
     },
     {
       "poza_piesa": "./piese/senzor33192.jpg",

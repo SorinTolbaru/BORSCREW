@@ -45,8 +45,9 @@ app.post("/addDB", upload.single("file"), (req, resp) => {
   while (data.repere.findIndex((item) => item.id === id) != -1) {
     id = Math.round(Math.random(1, 9999) * 100)
   }
-  req.body.id = id
-  data.repere.push(JSON.parse(req.body.json))
+  let dataToUpload = JSON.parse(req.body.json)
+  dataToUpload.id = id
+  data.repere.push(dataToUpload)
   fs.writeFileSync(
     path.join(__dirname, "/database/data.json"),
     JSON.stringify(data, null, 2)
@@ -62,6 +63,7 @@ app.put("/modifyDB/:id", (req, res) => {
     (item) => item.id === Number(req.params.id)
   )
   data.repere[elementIndex] = req.body
+  data.repere[elementIndex].id = Number(req.params.id)
   fs.writeFileSync(
     path.join(__dirname, "/database/data.json"),
     JSON.stringify(data, null, 2)

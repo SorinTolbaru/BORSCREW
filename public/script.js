@@ -15,7 +15,8 @@ $(document).ready(function () {
 
   //logica meniu principal
   $(".buton-admin, .buton-logare, .loading-logare").toggleClass("ascunde-meniu")
-  $("#logare").click(function () {
+  $(".password-container").on("submit", function (e) {
+    e.preventDefault()
     $.ajax({
       type: "GET",
       url: `/verifyAdmin`,
@@ -130,6 +131,7 @@ $(document).ready(function () {
       cantitate_stoc_minim: "",
       unitate_masura: "",
       pret_unitar_lei: "",
+      id: null,
     }
 
     idToSaveFiltered.forEach((element) => {
@@ -146,6 +148,8 @@ $(document).ready(function () {
             .trim()
         }
       }
+      console.log(reperModificat)
+      console.log(element)
       $.ajax({
         type: "PUT",
         url: `/modifyDB/${element}`,
