@@ -24,12 +24,12 @@ body {
   align-items: center;
 }
 
-input[type=search] {
+input[type="search"] {
   border-radius: 5px;
   border: 1px solid black;
 }
 
-input[type=button] {
+input[type="button"] {
   height: 3vh;
   line-height: 2vh;
   font-size: 15px;
@@ -43,14 +43,14 @@ hr {
   border-top: 1px solid black;
 }
 
-input[type=button]:hover {
+input[type="button"]:hover {
   background-color: lightgrey;
 }
 
 .logo-text {
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   font-size: 9vh;
   text-decoration: underline;
   text-decoration-color: red;
@@ -61,7 +61,11 @@ input[type=button]:hover {
   box-shadow: 0px 0px 10px black;
 }
 
-.make-bold, #categorie, #producator, #Linie, #hala {
+.make-bold,
+#categorie,
+#producator,
+#Linie,
+#hala {
   font-weight: bolder;
 }
 
@@ -81,7 +85,8 @@ input[type=button]:hover {
   flex-direction: column;
 }
 
-.loading,.loading-logare {
+.loading,
+.loading-logare {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -89,15 +94,14 @@ input[type=button]:hover {
   font-size: 2rem;
 }
 
-.inchide-logare{
+.inchide-logare {
   position: absolute;
   top: 5px;
   right: 10px;
   cursor: pointer;
 }
 
-
-.password-container{
+.password-container {
   display: none;
   position: absolute;
   margin: 0 auto;
@@ -114,11 +118,11 @@ input[type=button]:hover {
   height: 30vh;
 }
 
-#password{
+#password {
   cursor: pointer;
 }
 
-.password{
+.password {
   width: 80%;
 }
 
@@ -134,7 +138,8 @@ input[type=button]:hover {
   justify-content: space-around;
 }
 
-.buton-logare,.buton-admin {
+.buton-logare,
+.buton-admin {
   height: 50%;
   width: 40%;
   box-shadow: 0px 0px 10px darkgrey;
@@ -143,9 +148,7 @@ input[type=button]:hover {
   font-weight: bold;
 }
 
-
-
-.zoom-reper-container{
+.zoom-reper-container {
   background-color: rgba(49, 49, 49, 0.5);
   position: absolute;
   width: 100%;
@@ -156,17 +159,16 @@ input[type=button]:hover {
   align-items: center;
 }
 
-.zoom-reper{
+.zoom-reper {
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   position: relative;
+  background-repeat: no-repeat;
   width: 80%;
   height: 80%;
-  background-color: grey;
+  background-color: black;
   border-radius: 10px;
 }
-
-
 
 .container-sortare-search {
   display: flex;
@@ -202,7 +204,10 @@ input[type=button]:hover {
   gap: 4px;
 }
 
-.meniu-sortare-linie, .meniu-sortare-hala, .meniu-sortare-producator, .meniu-sortare-categorie {
+.meniu-sortare-linie,
+.meniu-sortare-hala,
+.meniu-sortare-producator,
+.meniu-sortare-categorie {
   display: flex;
 }
 
@@ -226,18 +231,21 @@ select {
   align-items: flex-start !important;
 }
 
-.inchide,.inchide-sterge,.inchide-zoom {
+.inchide,
+.inchide-sterge,
+.inchide-zoom {
   position: absolute;
   top: 0;
   right: 10px;
   cursor: pointer;
 }
 
-.inchide-zoom{
+.inchide-zoom {
   top: 10px;
 }
 
-.reper-delogare, #salvare {
+.reper-delogare,
+#salvare {
   min-height: 50%;
   min-width: 5%;
   margin-right: 2.5%;
@@ -261,7 +269,6 @@ select {
 }
 
 .formPost {
-
   height: 93%;
   display: grid;
   gap: 5px;
@@ -290,7 +297,8 @@ select {
   margin-top: 5px;
 }
 
-.filtrare, .piese-cautate {
+.filtrare,
+.piese-cautate {
   background-color: rgba(230, 230, 230, 0.9);
   margin-top: 1%;
   width: 12%;
@@ -347,7 +355,8 @@ select {
   border-bottom: 1px solid;
 }
 
-.date-importante, .date-generale {
+.date-importante,
+.date-generale {
   width: 100%;
   height: 100%;
 }
@@ -365,10 +374,9 @@ select {
   align-items: center;
   padding: 0.5%;
   display: flex;
-
 }
 
-.celula-piesa > div > strong{
+.celula-piesa > div > strong {
   margin-left: 5px;
 }
 
@@ -397,7 +405,8 @@ select {
   border-bottom: none;
 }
 
-.stoc-actual, .stoc-minim {
+.stoc-actual,
+.stoc-minim {
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -410,7 +419,8 @@ select {
   background-color: lightgray;
 }
 
-.numar-stoc-actual, .numar-stoc-minim {
+.numar-stoc-actual,
+.numar-stoc-minim {
   width: 100%;
   font-size: 20px;
   font-weight: bold;
@@ -423,7 +433,8 @@ select {
   border-right: 1px solid black;
 }
 
-.buton-stoc,.buton-stergere{
+.buton-stoc,
+.buton-stergere {
   width: 100%;
   cursor: pointer;
   font-weight: bold;
@@ -457,7 +468,8 @@ select {
   display: flex !important;
 }
 
-.retragere-reper,.stergere-reper {
+.retragere-reper,
+.stergere-reper {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -473,22 +485,29 @@ select {
   font-size: x-large;
 }
 
-.raspuns{
+.raspuns {
   display: flex;
   gap: 10px;
-
 }
 
-.retrage,.sterge,.anulare{
+.cantitateRetragere {
+  height: 20px;
+}
+
+.retrage,
+.sterge,
+.anulare {
   cursor: pointer;
   width: 100px;
-  height: 50px;
+  height: 40px;
   font-size: 20px;
-
 }
 
-span:focus{
+#logare {
+  cursor: pointer;
+}
+
+span:focus {
   background-color: grey;
   outline: none;
-
 }
