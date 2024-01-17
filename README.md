@@ -1,28 +1,32 @@
-# Titlul Proiectului: BORSCREW
-# Parola Admin:123
-Descriere:
+# Project Title: BORSCREW
 
-BORSCREW este o aplicație web proiectată pentru a simplifica gestionarea componentelor industriale, cu ajutorul jQuery pe partea de frontend și Node.js pe partea de backend. Această platformă servește ca un centru pentru găzduirea, adăugarea și retragerea pieselor industriale, oferind o soluție eficientă pentru angajatii din sectorul industrial.
+# Admin Password:123
 
-# Caracteristici Cheie:
-Gestionare Dinamică a Pieselor:
-Utilizeaza jQuery pentru a crea o interfață dinamică și responsive pentru gestionarea pieselor industriale.
+Description:
+
+BORSCREW is a web application designed to simplify the management of industrial components, using jQuery on the frontend and Node.js on the backend. This platform serves as a hub for hosting, adding and withdrawing industrial parts, providing an efficient solution for employees in the industrial sector.
+
+# Key Features:
+
+Dynamic Parts Management:
+It uses jQuery to create a dynamic and responsive interface for managing industrial parts.
 
 Backend Node.js:
-Backend-ul, cu ajutorul Node.js, asigură un mediu de server scalabil și eficient, facilitând găzduirea și modificarea stocului pieselor industriale cu ușurință.
+The backend, powered by Node.js, provides a scalable and efficient server environment, making it easy to host and modify industrial parts inventory.
 
-Funcționalitate de Adăugare și Retragere:
-Pentru adăugarea de piese noi în catalog și eliminarea componentelor, asigurând actualizarea constantă a bazei de date.
+Add and Withdraw Functionality:
+For adding new parts to the catalog and removing components, ensuring the database is constantly updated.
 
-Căutare și Filtrare:
-Permite utilizatorilor să caute eficient piese specifice și să aplice filtre bazate pe categorii, facilitând utilizarea platformei și economisind timp.
+Search and Filter:
+It allows users to efficiently search for specific parts and apply filters based on categories, making the platform easier to use and saving time.
 
-Design Responsive:
-Aplicația este proiectată să fie responsive pentru tablete și ecrane mai mari, oferind o experiență fluidă utilizatorilor care accesează platforma de pe diverse dispozitive și dimensiuni de ecran.
+Responsive Design:
+The app is designed to be responsive for tablets and larger screens, providing a seamless experience for users accessing the platform from various devices and screen sizes.
 
-# Tehnologii Utilizate:
+# Technologies Used:
+
 Frontend: jQuery, JavaScript, HTML, CSS
 Backend: Node.js
-Bază de Date: MongoDB
-Stilizare: CSS
-Design Responsive: CSS media queries
+Database: MongoDB
+Styling: CSS
+Responsive Design: CSS media queries

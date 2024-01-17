@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <title>BORSCREW - Repere</title>
+    <title>BORSCREW - Parts</title>
   </head>
 
   <body>
@@ -35,14 +35,14 @@
        c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z" />
         </svg>
       </div>
-      <p>Cate repere doriti sa retrageti?</p>
+      <p>How many parts would you like to withdraw?</p>
       <input
         type="number"
         min="0"
         class="cantitateRetragere"
         oninput="validity.valid||(value='');"
         placeholder="Numar repere" />
-      <button class="retrage">Retrage</button>
+      <button class="retrage">Withdraw</button>
     </div>
 
     <div class="stergere-reper">
@@ -66,10 +66,10 @@
        c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z" />
         </svg>
       </div>
-      <p>Doriti sa stergeti acest reper?</p>
+      <p>Would you like to delete this part?</p>
       <div class="raspuns">
-        <button class="sterge">Da</button>
-        <button class="anulare">Nu</button>
+        <button class="sterge">Yes</button>
+        <button class="anulare">No</button>
       </div>
     </div>
 
@@ -102,27 +102,29 @@
       <div class="container-sortare-search">
         <div class="meniu-sortare">
           <div class="meniu-sortare-linie">
-            <label for="tipreper" class="make-bold">Tip reper:</label>
+            <label for="tipreper" class="make-bold">Part Type:</label>
             <select name="tipreper" id="tipreper">
-              <option value="">Selecteaza tipul</option>
+              <option value="">Select type</option>
               <option value="standard">Standard</option>
-              <option value="senzori">Senzori</option>
+              <option value="sensors">Sensors</option>
             </select>
           </div>
 
           <div class="meniu-sortare-hala">
-            <label for="halaSearch" class="make-bold">Hala:</label>
+            <label for="halaSearch" class="make-bold">Hall:</label>
             <select name="hala" id="halaSearch">
-              <option value="">Selecteaza hala</option>
-              <option value="Electrotehnica 1">Electrotehnica 1</option>
-              <option value="Electrotehnica 2">Electrotehnica 2</option>
+              <option value="">Select hall</option>
+              <option value="Electrotehnical 1">Electrotehnical 1</option>
+              <option value="Electrotehnical 2">Electrotehnical 2</option>
             </select>
           </div>
 
           <div class="meniu-sortare-producator">
-            <label for="producatorSearch" class="make-bold">Producator:</label>
+            <label for="producatorSearch" class="make-bold"
+              >Manufacturer:</label
+            >
             <select name="producator" id="producatorSearch">
-              <option value="">Selecteaza producator</option>
+              <option value="">Select manufacturer</option>
               <option value="Harting">Harting</option>
               <option value="NOVOTEC">NOVOTEC</option>
               <option value="Malente">Malente</option>
@@ -133,16 +135,16 @@
 
           <div class="meniu-sortare-Linie Productie">
             <label for="Linie ProductieSearch" class="make-bold"
-              >Linie Productie:</label
+              >Production line:</label
             >
             <select name="Linie Productie" id="categorieSearch">
-              <option value="">Selecteaza linia</option>
-              <option value="DTX HAP 4">DTX HAP 1</option>
-              <option value="DTX HAP 6">DTX HAP 2</option>
+              <option value="">Select line</option>
+              <option value="DTX HAP 1">DTX HAP 1</option>
+              <option value="DTX HAP 2">DTX HAP 2</option>
               <option value="DTX HAP 3">DTX HAP 3</option>
-              <option value="DTX HAP 1">DTX HAP 4</option>
+              <option value="DTX HAP 4">DTX HAP 4</option>
               <option value="DTX HAP 5">DTX HAP 5</option>
-              <option value="DTX HAP 2">DTX HAP 6</option>
+              <option value="DTX HAP 6">DTX HAP 6</option>
             </select>
           </div>
         </div>
@@ -153,8 +155,8 @@
             name="search"
             id="search"
             autocomplete="off"
-            placeholder="Nume reper, Cod IFS, Producator..." />
-          <input type="button" id="search-button" value="Cauta" />
+            placeholder="Part name, IFS Code, manufacturer..." />
+          <input type="button" id="search-button" value="Search" />
         </div>
       </div>
 
@@ -162,33 +164,33 @@
         <div class="piese-cautate"></div>
         <form class="formPost ascunde-meniu" action="#" method="post">
           <div class="nou-container">
-            <strong>Poza reper:</strong
+            <strong>Part photo:</strong
             ><input type="file" name="pozaReper" id="poza_piesa" />
           </div>
 
           <div class="nou-container">
-            <strong>Nume reper:</strong>
+            <strong>Part name:</strong>
             <input type="text" name="numeReper" id="nume_reper" />
           </div>
 
           <div class="nou-container">
-            <strong>Tip reper:</strong>
+            <strong>Part type:</strong>
             <select name="tipReper" id="tip_reper">
-              <option value="">Selecteaza tipul</option>
+              <option value="">Select type</option>
               <option value="standard">Standard</option>
-              <option value="senzori">Senzori</option>
+              <option value="sensors">Sensors</option>
             </select>
           </div>
 
           <div class="nou-container">
-            <strong>Cod IFS:</strong>
+            <strong>IFS Code:</strong>
             <input type="text" name="codIfs" id="cod_ifs" />
           </div>
 
           <div class="nou-container">
-            <strong>Producator:</strong>
+            <strong>Manufacturer:</strong>
             <select name="producator" id="producator">
-              <option value="">Selecteaza producator</option>
+              <option value="">Select manufacturerr</option>
               <option value="Harting">Harting</option>
               <option value="NOVOTEC">NOVOTEC</option>
               <option value="Malente">Malente</option>
@@ -198,92 +200,92 @@
           </div>
 
           <div class="nou-container">
-            <strong>Cod Producator:</strong>
+            <strong>Manufacturer Code:</strong>
             <input type="text" name="codProducator" id="cod_producator" />
           </div>
 
           <div class="nou-container">
-            <strong>Linie Productie:</strong>
+            <strong>Production Line:</strong>
             <select name="Linie Productie" id="linie_productie">
-              <option value="">Selecteaza linia</option>
-              <option value="DTX HAP 4">DTX HAP 1</option>
-              <option value="DTX HAP 6">DTX HAP 2</option>
+              <option value="">Select line</option>
+              <option value="DTX HAP 1">DTX HAP 1</option>
+              <option value="DTX HAP 2">DTX HAP 2</option>
               <option value="DTX HAP 3">DTX HAP 3</option>
-              <option value="DTX HAP 1">DTX HAP 4</option>
+              <option value="DTX HAP 4">DTX HAP 4</option>
               <option value="DTX HAP 5">DTX HAP 5</option>
-              <option value="DTX HAP 2">DTX HAP 6</option>
+              <option value="DTX HAP 6">DTX HAP 6</option>
             </select>
           </div>
 
           <div class="nou-container">
-            <strong>Serie Echipament:</strong>
+            <strong>Equipment series:</strong>
             <input type="text" name="serieEchipament" id="serie_echipament" />
           </div>
 
           <div class="nou-container">
-            <strong>Locatie magazie:</strong>
+            <strong>Warehouse location:</strong>
             <input type="text" name="locatieMagazie" id="locatie_magazie" />
           </div>
 
           <div class="nou-container">
-            <strong>Hala:</strong>
+            <strong>Hall:</strong>
             <select name="hala" id="hala">
-              <option value="">Selecteaza hala</option>
-              <option value="Electrotehnica 1">Electrotehnica 1</option>
-              <option value="Electrotehnica 2">Electrotehnica 2</option>
+              <option value="">Select hall</option>
+              <option value="Electrotehnical 1">Electrotehnical 1</option>
+              <option value="Electrotehnical 2">Electrotehnical 2</option>
             </select>
           </div>
           <div class="nou-container">
-            <strong>Cantitate stoc minim admis:</strong
+            <strong>Min allowed stock quantity:</strong
             ><input type="number" id="cantitate_stoc_minim" />
           </div>
           <div class="nou-container">
-            <strong>Cantitate stoc actual:</strong
+            <strong>Current stock quantity:</strong
             ><input type="number" id="cantitate_stoc_actual" />
           </div>
           <div class="nou-container">
-            <strong>Unitate de masura:</strong
+            <strong>Measurement Unit:</strong
             ><input type="text" id="unitate_masura" />
           </div>
           <div class="nou-container">
-            <strong>Pre unitar (Lei):</strong
+            <strong>Unit price (Dollars):</strong
             ><input type="number" id="pret_unitar_lei" />
           </div>
           <div class="nou-container">
-            <strong>Descriere:</strong><textarea id="descriere"></textarea>
+            <strong>Description:</strong><textarea id="descriere"></textarea>
           </div>
 
           <div class="nou-container">
-            <strong>Observatii:</strong><textarea id="observatii"></textarea>
+            <strong>Observations:</strong><textarea id="observatii"></textarea>
           </div>
 
-          <input type="submit" value="Adauga reper" class="submitPost" />
+          <input type="submit" value="Add part" class="submitPost" />
         </form>
       </div>
       <div class="add-button-container">
         <input
           style="height: 5vh"
           type="button"
-          value="Salveaza modificari"
+          value="Save modifications"
           id="salvare" />
-        <div class="nr_piese"><strong>Rezultate</strong>:</div>
+        <div class="nr_piese"><strong>Results</strong>:</div>
         <div class="reper-delogare">
           <input
             style="height: 5vh"
             type="button"
-            value="Reper nou"
+            value="New part"
             id="add-button" />
           <input
             style="height: 5vh"
             type="button"
-            value="Delogare"
+            value="Log off"
             id="delogare" />
         </div>
       </div>
     </div>
 
     <div class="meniu-logare">
-      <div class="loading-logare">Se incarca...</div>
+      <div class="loading-logare">Loading...</div>
       <button class="buton-admin ascunde-meniu">Admin</button>
       <button class="buton-logare ascunde-meniu">Guest</button>
       <form class="password-container ascunde-meniu">
@@ -307,9 +309,9 @@
            c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z" />
           </svg>
         </div>
-        <p>Introdu Parola</p>
+        <p>Input password</p>
         <input type="password" class="password" />
-        <button id="logare">Logare</button>
+        <button id="logare">Log in</button>
       </form>
     </div>
     <script src="./jquery-3.7.0.js" defer></script>

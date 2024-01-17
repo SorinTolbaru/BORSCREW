@@ -96,7 +96,7 @@ $(document).ready(function () {
     }
     //adauga lista de piese in pagina
     $(".piese-cautate").html([...piese])
-    $(".nr_piese").html(`<strong>Rezultate</strong>:${data.length}`)
+    $(".nr_piese").html(`<strong>Results</strong>:${data.length}`)
   }
 
   function culoareStoc(actual, admis) {
@@ -211,7 +211,7 @@ $(document).ready(function () {
       )
     })
     $(".piese-cautate").html([...lista])
-    $(".nr_piese").html(`<strong>Rezultate</strong>: ${lista.length}`)
+    $(".nr_piese").html(`<strong>Results</strong>: ${lista.length}`)
     initializareElemente()
   }
 
@@ -353,7 +353,7 @@ $(document).ready(function () {
         0
       ) {
         alert(
-          "Numarul de repere trebuie sa fie cel putin egal cu numarul minim admis!"
+          "Number of parts withdrawn must be at least equal to current stock!"
         )
       } else {
         //scade valoarea din stoc actual
