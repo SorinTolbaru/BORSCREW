@@ -26,7 +26,11 @@ The app is designed to be responsive for tablets and larger screens, providing a
 # Technologies Used:
 
 Frontend: jQuery, JavaScript, HTML, CSS
+
 Backend: Node.js
+
 Database: MongoDB
+
 Styling: CSS
+
 Responsive Design: CSS media queries
